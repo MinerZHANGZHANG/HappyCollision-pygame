@@ -216,7 +216,6 @@ _pkginfo.txt
 # Others
 /Images
 /Test
-ClientBin/
 ~$*
 *~
 *.dbmdl
