@@ -3,7 +3,7 @@
 #### 介绍
 一个主要使用pygame库开发的简单2d小人对对碰游戏。
 提供单/双人游戏，PVE和PVP模式。
-![游戏示例](Image/startgame.gif "startGame.gif")
+![游戏示例](Image/startgame.gif)
 
 #### 软件架构
 ##### 开发和测试环境 
@@ -23,7 +23,7 @@
 8. effect.py 包含人物和敌人产生的攻击物体的更新和显示。
 9. setting.py 从外部加载图片，汇总游戏中各类属性的定义。
 
-![程序模块组成](Image/introduce.jpg "mod.jpg")
+![程序模块组成](Image/introduce.jpg)
 
 1. 运行需要的外部资源包括Image文件夹下的图片，以及游戏控制介绍文本HowToPlay.txt。
 2. 此外第一次运行会在目录下生成一个用于存储游戏记录的GameRecord.csv文件。
