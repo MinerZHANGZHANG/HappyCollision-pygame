@@ -41,10 +41,5 @@
 
 
 #### 作者
-https://gitee.com/z-miner
-
-#### 学习和参考
-
-1. c语言中文网： http://m.biancheng.net/pygame/
-2. pygame社区： https://www.pygame.org/contribute.html
+- https://gitee.com/z-miner
 
