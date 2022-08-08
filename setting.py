@@ -14,7 +14,7 @@ class Setting(object):
         self.screen_width=800
         self.screen_height=450
         #窗口标题(中文可能会导致pyinstaller打包失败)
-        self.screen_caption="HappyKings"
+        self.screen_caption="HappyCollision"
         #游戏记录文件路径       
         self.record_path="GameRecord.csv"
         #游戏操作文件路径
