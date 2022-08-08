@@ -7,9 +7,9 @@
 
 #### 软件架构
 ##### 开发和测试环境 
-Python版本为3.8(64-bit)
-pygame库版本为2.1.2
-
+Python 3.8(64-bit)
+Pygame 2.1.2
+PyInstaller 5.1
 ##### 模块介绍
 main.py 程序入口，进行游戏内容的初始化及主循环。
 game_event.py 处理输入事件，生成和更新物体状态的方法。
