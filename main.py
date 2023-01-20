@@ -129,9 +129,11 @@ def run_game():
             #胜利条件
             if setting.timer>=60*setting.fps and not group_enemy.spritedict and setting.game_mode==0:
                 game_event.game_win(setting,showinfo,group_enemy,group_attack,group_enemy_attack)
+                setting.timer=0
             #失败条件
-            if setting.isinit and (setting.health_1<=0 or setting.health_2<=0):
+            if setting.isinit and ((setting.player_1!=None and setting.health_1<=0) or (setting.player_2!=None and setting.health_2<=0)):              
                 game_event.game_dead(setting,showinfo,group_enemy,group_attack,group_enemy_attack)
+                setting.timer=0
         #玩家对抗模式
         elif setting.game_active and setting.game_mode==1:
             #人物初始化
@@ -157,10 +159,12 @@ def run_game():
             if setting.isinit and setting.health_2<=0:
                 setting.score_1+=1
                 game_event.game_win(setting,showinfo,group_enemy,group_attack,group_enemy_attack)
+                setting.timer=0
             #玩家2胜利条件
             if setting.isinit and setting.health_1<=0:
                 setting.score_2+=1
                 game_event.game_win(setting,showinfo,group_enemy,group_attack,group_enemy_attack)
+                setting.timer=0
         
         #根据上述更新的结果绘制整个游戏窗口
         game_event.update_screen(setting,screen,group_player,group_attack,group_enemy,group_enemy_attack,
